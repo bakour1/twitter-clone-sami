@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [ "./*.{html,js}" ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -16,6 +17,9 @@ module.exports = {
           800: "#162d40",
           900: "#15202b",
         },
+      },
+      animation: {
+        "spin-fast": "spin 0.5s linear infinite"
       }
     },
   },
